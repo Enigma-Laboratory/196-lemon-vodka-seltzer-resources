@@ -1,0 +1,45 @@
+@import '../base/base';
+
+.section_header {
+  margin: 0 6%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 60px;
+  .title {
+    display: flex;
+    flex-direction: column;
+    background-color: $primary-color;
+    position: relative;
+    h1 {
+      align-self: flex-start;
+      color: $black-color;
+      font-size: 130px;
+      font-weight: 800;
+      line-height: 108px;
+    }
+    p {
+      position: absolute;
+      top: 35%;
+      right: 0;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 27px;
+      color: $black-color;
+      text-align: right;
+      width: 87%;
+    }
+    h2 {
+      align-self: flex-end;
+      color: $black-color;
+      font-size: 251.33px;
+      font-weight: 600;
+      line-height: 334px;
+      height: 270px;
+    }
+  }
+  img {
+    margin-left: 50px;
+    width: 204px;
+    height: 385px;
+  }
+}
