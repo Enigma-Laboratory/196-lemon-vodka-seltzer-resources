@@ -12,3 +12,7 @@ https://www.figma.com/design/kqVNjqVVLBorrOVDQamhXp/-196-240614?node-id=6030-494
 - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) -> Run a local real-time server
 
 Install 2 extensions and open the both.
+
+## Note
+
+Setup Prettier to the workspace in order to have best experience.
