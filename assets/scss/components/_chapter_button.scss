@@ -14,3 +14,9 @@
   background-color: $black-color;
   color: $primary-color;
 }
+
+.white-chapter-button {
+  @extend .chapter-button;
+  background-color: $white-color;
+  color: $black-color;
+}
