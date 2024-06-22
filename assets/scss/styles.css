@@ -1028,6 +1028,45 @@ img {
   top: 586px;
 }
 
+.section__chapter1-uk-3 {
+  text-align: center;
+  position: relative;
+  height: 100vh;
+  background: url(/assets/img/chapter1/uk-3/can.png) no-repeat center center/cover;
+}
+.section__chapter1-uk-3 .title {
+  margin-top: 95px;
+  text-align: center;
+}
+.section__chapter1-uk-3 .title h2 {
+  color: #000;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 38.4px;
+}
+.section__chapter1-uk-3 .title .divider {
+  margin-top: 25px;
+  display: inline-block;
+  height: 8px;
+  width: 73px;
+  background-color: #000;
+}
+.section__chapter1-uk-3 .tag-button {
+  margin-top: 62px;
+  display: inline-block;
+}
+.section__chapter1-uk-3 .tag-button.second-mode {
+  margin-top: 83px;
+}
+.section__chapter1-uk-3 p {
+  display: inline-block;
+  width: 60%;
+  margin-top: 17px;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 80px;
+}
+
 .section__chapter1-us-1 {
   position: relative;
   display: flex;
