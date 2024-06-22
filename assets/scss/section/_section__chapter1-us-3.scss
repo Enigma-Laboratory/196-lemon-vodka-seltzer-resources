@@ -1,0 +1,34 @@
+.section__chapter1-us-3 {
+  position: relative;
+  // display: inline-flex;
+  flex-direction: row;
+  background-color: rgb(255, 174, 174);
+  height: 100vh;
+  // margin-top: 20px;
+  .chapter-button {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 140px;
+    text-align: center;
+    h2 {
+      color: $black-color;
+      font-size: 32px;
+      font-weight: 800;
+      line-height: 38.4px;
+    }
+    .divider {
+      margin-top: 25px;
+      display: inline-block;
+      height: 8px;
+      width: 73px;
+      background-color: $black-color;
+    }
+  }
+}
