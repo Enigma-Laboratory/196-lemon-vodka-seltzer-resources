@@ -769,19 +769,19 @@ img {
   height: 385px;
 }
 
-.section__chapter1 {
+.section__chapter1-select {
   text-align: center;
 }
-.section__chapter1 .chapter-button {
+.section__chapter1-select .chapter-button {
   margin: 80px 0 40px;
 }
-.section__chapter1 h1 {
+.section__chapter1-select h1 {
   font-size: 72px;
   font-weight: 700;
   color: #000;
   margin-bottom: 80px;
 }
-.section__chapter1 p {
+.section__chapter1-select p {
   display: inline-block;
   font-size: 24px;
   font-weight: 500;
@@ -789,24 +789,24 @@ img {
   width: 60%;
   margin-bottom: 80px;
 }
-.section__chapter1 .wrap-img {
+.section__chapter1-select .wrap-img {
   display: flex;
   justify-content: space-between;
   height: 68vh;
 }
-.section__chapter1 .wrap-img .img {
+.section__chapter1-select .wrap-img .img {
   display: inline-block;
   width: 45%;
   position: relative;
   background-color: red;
 }
-.section__chapter1 .wrap-img .img img {
+.section__chapter1-select .wrap-img .img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.section__chapter1 .wrap-img .img .wrap-text {
+.section__chapter1-select .wrap-img .img .wrap-text {
   position: absolute;
   right: 0;
   left: 0;
@@ -816,7 +816,7 @@ img {
   padding: 10px 0;
   opacity: 50%;
 }
-.section__chapter1 .wrap-img .img .wrap-text .text {
+.section__chapter1-select .wrap-img .img .wrap-text .text {
   font-size: 180px;
   font-style: italic;
   font-weight: 800;
@@ -980,4 +980,37 @@ img {
 .section__chapter1-us-2 .container3 .white-box {
   right: 93px;
   top: 586px;
+}
+
+.section__chapter1-us-3 {
+  position: relative;
+  flex-direction: row;
+  background-color: rgb(255, 174, 174);
+  height: 100vh;
+}
+.section__chapter1-us-3 .chapter-button {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.section__chapter1-us-3 .title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 140px;
+  text-align: center;
+}
+.section__chapter1-us-3 .title h2 {
+  color: #000;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 38.4px;
+}
+.section__chapter1-us-3 .title .divider {
+  margin-top: 25px;
+  display: inline-block;
+  height: 8px;
+  width: 73px;
+  background-color: #000;
 }/*# sourceMappingURL=styles.css.map */
