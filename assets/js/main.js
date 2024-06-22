@@ -295,3 +295,272 @@ document.addEventListener('DOMContentLoaded', () => {
     slidesContainer.style.transform = `translateX(0)`
   }) // Reset position on resize
 })
+
+const mock_data_de = [
+  {
+    id: 'slide-aus-1',
+    areaHeader: {
+      icon: './assets/img/marker.svg',
+      title: 'Area 1',
+    },
+    image: {
+      src: './assets/img/chapter-3-de/people.svg',
+      alt: 'Suntory -196 Lemon Can',
+    },
+    comment:
+      'Comment:Welcome to our website! Here you will find a wide array of resources and information tailored just for you. WhetherWelcome to our website! Here you will find a wide array of resources and information tailored just for you. Whether',
+  },
+  {
+    id: 'slide-aus-2',
+    areaHeader: {
+      icon: './assets/img/marker.svg',
+      title: 'Area 2',
+    },
+    image: {
+      src: './assets/img/chapter-3-de/banner.svg',
+      alt: 'Store Display',
+    },
+    comment:
+      'Comment:Welcome to our website! Here you will find a wide array of resources and information tailored just for you. WhetherWelcome to our website! Here you will find a wide array of resources and information tailored just for you. Whether',
+  },
+  {
+    id: 'slide-aus-3',
+    areaHeader: {
+      icon: './assets/img/marker.svg',
+      title: 'Area 2',
+    },
+    image: {
+      src: './assets/img/chapter-3-de/people.svg',
+      alt: 'Store Display',
+    },
+    comment:
+      'Comment:Welcome to our website! Here you will find a wide array of resources and information tailored just for you. WhetherWelcome to our website! Here you will find a wide array of resources and information tailored just for you. Whether',
+  },
+  {
+    id: 'slide-aus-4',
+    areaHeader: {
+      icon: './assets/img/marker.svg',
+      title: 'Area 2',
+    },
+    image: {
+      src: './assets/img/chapter-3-de/banner.svg',
+      alt: 'Store Display',
+    },
+    comment:
+      'Comment:Welcome to our website! Here you will find a wide array of resources and information tailored just for you. WhetherWelcome to our website! Here you will find a wide array of resources and information tailored just for you. Whether',
+  },
+]
+
+/*==============Carousel in DA===============*/
+document.addEventListener('DOMContentLoaded', () => {
+  const slidesContainer = document.getElementById('slides-container-chapter-3-de')
+  const prevButton = document.querySelector('.prev-chapter-3-de')
+  const nextButton = document.querySelector('.next-chapter-3-de')
+  let isTransitioning = false
+
+  function createSlide(slide) {
+    const slideDiv = document.createElement('div')
+    slideDiv.classList.add('slide')
+    slideDiv.id = slide.id
+    const isPadding = mockData.length >= mockData.indexOf(slide) + 1
+
+    slideDiv.innerHTML = `
+      <div class="area" style="${isPadding ? 'margin-right: 26px;' : ''}">
+        <div class="area-header">
+          <img src="${slide.areaHeader.icon}" />
+          <div>${slide.areaHeader.title}</div>
+        </div>
+        <img class="img-detail-area" src="${slide.image.src}" alt="${slide.image.alt}" />
+        <p class="comment">${slide.comment}</p>
+      </div>
+    `
+    return slideDiv
+  }
+
+  // Initialize slides
+  mock_data_de.forEach((slide) => {
+    slidesContainer.appendChild(createSlide(slide))
+  })
+
+  // Update carousel position
+  function updateCarousel(offset) {
+    slidesContainer.style.transition = 'transform 0.5s ease'
+    slidesContainer.style.transform = `translateX(${offset}px)`
+  }
+
+  // Handle next button click
+  nextButton.addEventListener('click', () => {
+    if (isTransitioning) return
+    isTransitioning = true
+
+    const slideWidth = document.querySelector('.slide').clientWidth
+    const offset = -slideWidth
+
+    updateCarousel(offset)
+
+    setTimeout(() => {
+      slidesContainer.style.transition = 'none'
+      slidesContainer.style.transform = `translateX(0)`
+      slidesContainer.appendChild(slidesContainer.firstElementChild)
+      isTransitioning = false
+    }, 500) // Adjust timing to match CSS transition
+  })
+
+  // Handle prev button click
+  prevButton.addEventListener('click', () => {
+    if (isTransitioning) return
+    isTransitioning = true
+
+    const slideWidth = document.querySelector('.slide').clientWidth
+    const offset = slideWidth
+
+    slidesContainer.style.transition = 'none'
+    slidesContainer.style.transform = `translateX(${-offset}px)`
+    slidesContainer.insertBefore(slidesContainer.lastElementChild, slidesContainer.firstElementChild)
+
+    setTimeout(() => {
+      slidesContainer.style.transition = 'transform 0.5s ease'
+      slidesContainer.style.transform = `translateX(0)`
+      isTransitioning = false
+    }, 300) // Start transition immediately
+  })
+
+  window.addEventListener('resize', () => {
+    slidesContainer.style.transition = 'none'
+    slidesContainer.style.transform = `translateX(0)`
+  }) // Reset position on resize
+})
+
+const mock_data_uk = [
+  {
+    id: 'slide-aus-1',
+    areaHeader: {
+      icon: './assets/img/marker.svg',
+      title: 'Area 1',
+    },
+    image: {
+      src: './assets/img/chapter-3-uk/brochure.svg',
+      alt: 'Suntory -196 Lemon Can',
+    },
+    comment:
+      'Comment:Welcome to our website! Here you will find a wide array of resources and information tailored just for you. WhetherWelcome to our website! Here you will find a wide array of resources and information tailored just for you. Whether',
+  },
+  {
+    id: 'slide-aus-2',
+    areaHeader: {
+      icon: './assets/img/marker.svg',
+      title: 'Area 2',
+    },
+    image: {
+      src: './assets/img/chapter-3-uk/banner.svg',
+      alt: 'Store Display',
+    },
+    comment:
+      'Comment:Welcome to our website! Here you will find a wide array of resources and information tailored just for you. WhetherWelcome to our website! Here you will find a wide array of resources and information tailored just for you. Whether',
+  },
+  {
+    id: 'slide-aus-3',
+    areaHeader: {
+      icon: './assets/img/marker.svg',
+      title: 'Area 2',
+    },
+    image: {
+      src: './assets/img/chapter-3-uk/brochure.svg',
+      alt: 'Store Display',
+    },
+    comment:
+      'Comment:Welcome to our website! Here you will find a wide array of resources and information tailored just for you. WhetherWelcome to our website! Here you will find a wide array of resources and information tailored just for you. Whether',
+  },
+  {
+    id: 'slide-aus-4',
+    areaHeader: {
+      icon: './assets/img/marker.svg',
+      title: 'Area 2',
+    },
+    image: {
+      src: './assets/img/chapter-3-uk/banner.svg',
+      alt: 'Store Display',
+    },
+    comment:
+      'Comment:Welcome to our website! Here you will find a wide array of resources and information tailored just for you. WhetherWelcome to our website! Here you will find a wide array of resources and information tailored just for you. Whether',
+  },
+]
+/*==============Carousel in UK===============*/
+document.addEventListener('DOMContentLoaded', () => {
+  const slidesContainer = document.getElementById('slides-container-chapter-3-uk')
+  const prevButton = document.querySelector('.prev-chapter-3-uk')
+  const nextButton = document.querySelector('.next-chapter-3-uk')
+  let isTransitioning = false
+
+  function createSlide(slide) {
+    const slideDiv = document.createElement('div')
+    slideDiv.classList.add('slide')
+    slideDiv.id = slide.id
+    const isPadding = mockData.length >= mockData.indexOf(slide) + 1
+
+    slideDiv.innerHTML = `
+      <div class="area" style="${isPadding ? 'margin-right: 26px;' : ''}">
+        <div class="area-header">
+          <img src="${slide.areaHeader.icon}" />
+          <div>${slide.areaHeader.title}</div>
+        </div>
+        <img class="img-detail-area" src="${slide.image.src}" alt="${slide.image.alt}" />
+        <p class="comment">${slide.comment}</p>
+      </div>
+    `
+    return slideDiv
+  }
+
+  // Initialize slides
+  mock_data_uk.forEach((slide) => {
+    slidesContainer.appendChild(createSlide(slide))
+  })
+
+  // Update carousel position
+  function updateCarousel(offset) {
+    slidesContainer.style.transition = 'transform 0.5s ease'
+    slidesContainer.style.transform = `translateX(${offset}px)`
+  }
+
+  // Handle next button click
+  nextButton.addEventListener('click', () => {
+    if (isTransitioning) return
+    isTransitioning = true
+
+    const slideWidth = document.querySelector('.slide').clientWidth
+    const offset = -slideWidth
+
+    updateCarousel(offset)
+
+    setTimeout(() => {
+      slidesContainer.style.transition = 'none'
+      slidesContainer.style.transform = `translateX(0)`
+      slidesContainer.appendChild(slidesContainer.firstElementChild)
+      isTransitioning = false
+    }, 500) // Adjust timing to match CSS transition
+  })
+
+  // Handle prev button click
+  prevButton.addEventListener('click', () => {
+    if (isTransitioning) return
+    isTransitioning = true
+
+    const slideWidth = document.querySelector('.slide').clientWidth
+    const offset = slideWidth
+
+    slidesContainer.style.transition = 'none'
+    slidesContainer.style.transform = `translateX(${-offset}px)`
+    slidesContainer.insertBefore(slidesContainer.lastElementChild, slidesContainer.firstElementChild)
+
+    setTimeout(() => {
+      slidesContainer.style.transition = 'transform 0.5s ease'
+      slidesContainer.style.transform = `translateX(0)`
+      isTransitioning = false
+    }, 300) // Start transition immediately
+  })
+
+  window.addEventListener('resize', () => {
+    slidesContainer.style.transition = 'none'
+    slidesContainer.style.transform = `translateX(0)`
+  }) // Reset position on resize
+})
