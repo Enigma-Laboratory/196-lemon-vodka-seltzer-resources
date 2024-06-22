@@ -429,10 +429,26 @@ img {
   font-weight: 800;
   line-height: 46px;
   text-align: center;
-  width: 248px;
+  width: 260px;
   background-color: #fedd00;
   color: #000;
   display: inline-block;
+}
+
+.corner-text {
+  font-size: 117.14px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 73px;
+  text-align: left;
+  position: absolute;
+  top: 46px;
+  left: 84px;
+  color: #fff;
+}
+.corner-text.right {
+  left: unset;
+  right: 84px;
 }
 
 /*=============== SCROLL UP ===============*/
@@ -772,4 +788,93 @@ img {
   font-weight: 800;
   line-height: 106px;
   color: #fff;
+}
+
+.section__chapter1-us-1 {
+  position: relative;
+  display: flex;
+  height: 100vh;
+}
+.section__chapter1-us-1 .chapter-button {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.section__chapter1-us-1 .left-screen {
+  flex: 1;
+}
+.section__chapter1-us-1 .left-screen__top {
+  height: 39%;
+  text-align: left;
+}
+.section__chapter1-us-1 .left-screen__top img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+.section__chapter1-us-1 .left-screen__bottom {
+  padding-top: 6px;
+  height: 61%;
+  display: flex;
+}
+.section__chapter1-us-1 .left-screen__bottom__left {
+  flex: 1;
+}
+.section__chapter1-us-1 .left-screen__bottom__left img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 55%;
+}
+.section__chapter1-us-1 .left-screen__bottom__left img:first-child {
+  height: 45%;
+  padding-bottom: 6px;
+}
+.section__chapter1-us-1 .left-screen__bottom__right {
+  flex: 1;
+}
+.section__chapter1-us-1 .left-screen__bottom__right img {
+  padding-left: 6px;
+}
+.section__chapter1-us-1 .right-screen {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 88px;
+}
+.section__chapter1-us-1 .right-screen .wrap {
+  width: 60%;
+  text-align: center;
+}
+.section__chapter1-us-1 .right-screen .wrap h2 {
+  margin-top: 80px;
+  text-align: center;
+  color: #000;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 38.4px;
+  margin-bottom: 30px;
+}
+.section__chapter1-us-1 .right-screen .wrap .divider {
+  display: inline-block;
+  width: 60px;
+  height: 8px;
+  background-color: #fff;
+  margin-bottom: 40px;
+}
+.section__chapter1-us-1 .right-screen .wrap h1 {
+  color: #000;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 72px;
+}
+.section__chapter1-us-1 .right-screen .wrap p {
+  margin-top: 60px;
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: center;
 }/*# sourceMappingURL=styles.css.map */
