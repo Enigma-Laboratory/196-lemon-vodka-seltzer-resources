@@ -591,41 +591,50 @@ img {
 .section__chapter3_us {
   background: #fedd00;
 }
-.section__chapter3_us .container {
+.section__chapter3_us .container-chapter-3 {
   text-align: center;
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
-.section__chapter3_us .container h1,
-.section__chapter3_us .container h2 {
-  margin: 0;
+.section__chapter3_us .container-chapter-3 .chapter-3-description {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 76.8px;
   color: #000;
+  margin-top: 63px;
+  margin-bottom: 53px;
+  font-style: italic;
 }
-.section__chapter3_us .card {
+.section__chapter3_us .container-chapter-3 .card {
   background: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 1012px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.25);
+  max-width: 1012px;
+  margin-bottom: 92px;
 }
-.section__chapter3_us .card .header-chapter-3-us {
+.section__chapter3_us .container-chapter-3 .card .header-chapter-3-us {
   display: flex;
   justify-content: space-between;
   align-items: start;
+  padding: 32px 32px 0 32px;
   text-align: start;
   gap: 35px;
 }
-.section__chapter3_us .card .header-chapter-3-us .header-content {
+.section__chapter3_us .container-chapter-3 .card .header-chapter-3-us .header-content {
   width: 100%;
 }
-.section__chapter3_us .card .header-chapter-3-us .header-content .title {
+.section__chapter3_us .container-chapter-3 .card .header-chapter-3-us .header-content .title {
   font-size: 40px;
   font-weight: 800;
 }
-.section__chapter3_us .card .header-chapter-3-us .header-content .description {
+.section__chapter3_us .container-chapter-3 .card .header-chapter-3-us .header-content .description {
   max-width: 585px;
   font-size: 18px;
   font-weight: 500;
   line-height: 20px;
 }
-.section__chapter3_us .card .header-chapter-3-us .arrow-button {
+.section__chapter3_us .container-chapter-3 .card .header-chapter-3-us .arrow-button {
   width: 46px;
   height: 46px;
   border: 1px solid #000;
@@ -635,57 +644,74 @@ img {
   justify-content: center;
   cursor: pointer;
 }
-.section__chapter3_us .card .header-chapter-3-us .arrow-button .arrow-up {
-  width: 0;
-  height: 0;
-  border-left: 12px solid transparent;
-  border-right: 12px solid transparent;
-  border-bottom: 12px solid black;
+.section__chapter3_us .container-chapter-3 .card .header-chapter-3-us .arrow-button:hover {
+  background-color: rgb(245, 242, 242);
 }
-.section__chapter3_us .card .carousel {
-  position: relative;
-  width: 80%;
-  margin: 0 auto;
-  overflow: hidden;
-}
-.section__chapter3_us .card .carousel .slide {
+.section__chapter3_us .container-chapter-3 .card .carousel-content {
   display: flex;
-  justify-content: center;
+}
+.section__chapter3_us .container-chapter-3 .card .carousel-content button {
+  background-color: transparent;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  width: 50px;
+}
+.section__chapter3_us .container-chapter-3 .card .carousel-content button.prev {
+  margin-left: 10px;
+  margin-right: 0;
+}
+.section__chapter3_us .container-chapter-3 .card .carousel-content button.next {
+  margin-right: 10px;
+  margin-left: 0;
+}
+.section__chapter3_us .container-chapter-3 .card .carousel {
+  position: relative;
+  overflow: hidden;
+  margin: 23px 15px 0 15px;
+  padding-bottom: 54px;
+}
+.section__chapter3_us .container-chapter-3 .card .carousel .slides {
+  display: flex;
+  justify-content: start;
   transition: transform 0.5s ease-in-out;
 }
-.section__chapter3_us .card .carousel .area {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  margin: 10px;
-  padding: 10px;
-  width: 45%;
+.section__chapter3_us .container-chapter-3 .card .carousel .slide {
   box-sizing: border-box;
 }
-.section__chapter3_us .card .carousel .area img {
+.section__chapter3_us .container-chapter-3 .card .carousel .area {
+  background-color: #fff;
+  border-radius: 11px;
+  padding: 30px 40px 46px 40px;
+  box-sizing: border-box;
+  min-width: 390px;
+  border: 1px solid #000;
+}
+.section__chapter3_us .container-chapter-3 .card .carousel .area .area-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 4px;
+  font-size: 24.89px;
+  font-weight: 500;
+}
+.section__chapter3_us .container-chapter-3 .card .carousel .area .img-detail-area {
+  -o-object-fit: cover;
+     object-fit: cover;
   max-width: 100%;
-  border-radius: 8px;
+  width: 313px;
+  height: 313px;
 }
-.section__chapter3_us .card .carousel .area .comment {
+.section__chapter3_us .container-chapter-3 .card .carousel .area .comment {
   color: #000;
-  margin-top: 10px;
-}
-.section__chapter3_us .card .carousel button {
-  background-color: #000;
-  color: #fff;
-  border: none;
-  padding: 10px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-  z-index: 10;
-}
-.section__chapter3_us .card .carousel button.prev {
-  left: 10px;
-}
-.section__chapter3_us .card .carousel button.next {
-  right: 10px;
+  margin-top: 26px;
+  padding: 0;
+  max-width: 313px;
+  text-align: start;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
 }
 
 .corner-text {
@@ -1013,4 +1039,130 @@ img {
   height: 8px;
   width: 73px;
   background-color: #000;
+}
+
+.section__chapter3_aus {
+  background: #fedd00;
+}
+.section__chapter3_aus .container-chapter-3 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.section__chapter3_aus .container-chapter-3 .chapter-3-description {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 76.8px;
+  color: #000;
+  margin-top: 63px;
+  margin-bottom: 53px;
+  font-style: italic;
+}
+.section__chapter3_aus .container-chapter-3 .card {
+  background: #fff;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.25);
+  max-width: 1012px;
+  margin-bottom: 92px;
+}
+.section__chapter3_aus .container-chapter-3 .card .header-chapter-3-us {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 32px 32px 0 32px;
+  text-align: start;
+  gap: 35px;
+}
+.section__chapter3_aus .container-chapter-3 .card .header-chapter-3-us .header-content {
+  width: 100%;
+}
+.section__chapter3_aus .container-chapter-3 .card .header-chapter-3-us .header-content .title {
+  font-size: 40px;
+  font-weight: 800;
+}
+.section__chapter3_aus .container-chapter-3 .card .header-chapter-3-us .header-content .description {
+  max-width: 585px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.section__chapter3_aus .container-chapter-3 .card .header-chapter-3-us .arrow-button {
+  width: 46px;
+  height: 46px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.section__chapter3_aus .container-chapter-3 .card .header-chapter-3-us .arrow-button:hover {
+  background-color: rgb(245, 242, 242);
+}
+.section__chapter3_aus .container-chapter-3 .card .carousel-content {
+  display: flex;
+}
+.section__chapter3_aus .container-chapter-3 .card .carousel-content button {
+  background-color: transparent;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  width: 50px;
+}
+.section__chapter3_aus .container-chapter-3 .card .carousel-content button.prev-chapter-3-aus {
+  margin-left: 10px;
+  margin-right: 0;
+}
+.section__chapter3_aus .container-chapter-3 .card .carousel-content button.next-chapter-3-aus {
+  margin-right: 10px;
+  margin-left: 0;
+}
+.section__chapter3_aus .container-chapter-3 .card .carousel {
+  position: relative;
+  overflow: hidden;
+  margin: 23px 15px 0 15px;
+  padding-bottom: 54px;
+}
+.section__chapter3_aus .container-chapter-3 .card .carousel .slides {
+  display: flex;
+  justify-content: start;
+  transition: transform 0.5s ease-in-out;
+}
+.section__chapter3_aus .container-chapter-3 .card .carousel .slide {
+  box-sizing: border-box;
+}
+.section__chapter3_aus .container-chapter-3 .card .carousel .area {
+  background-color: #fff;
+  border-radius: 11px;
+  padding: 30px 40px 46px 40px;
+  box-sizing: border-box;
+  min-width: 390px;
+  border: 1px solid #000;
+}
+.section__chapter3_aus .container-chapter-3 .card .carousel .area .area-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 4px;
+  font-size: 24.89px;
+  font-weight: 500;
+}
+.section__chapter3_aus .container-chapter-3 .card .carousel .area .img-detail-area {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+  width: 313px;
+  height: 313px;
+}
+.section__chapter3_aus .container-chapter-3 .card .carousel .area .comment {
+  color: #000;
+  margin-top: 26px;
+  padding: 0;
+  max-width: 313px;
+  text-align: start;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
 }/*# sourceMappingURL=styles.css.map */
