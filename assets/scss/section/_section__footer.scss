@@ -1,0 +1,18 @@
+@import '../config/variables';
+.section__footer {
+  color: $white-color;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 29px;
+  .copy-right {
+  }
+  .contact {
+  }
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: $black-color;
+}

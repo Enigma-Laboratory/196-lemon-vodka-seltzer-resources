@@ -1678,4 +1678,18 @@ img {
   font-size: 18px;
   font-weight: 500;
   line-height: 20px;
+}
+
+.section__footer {
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 29px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #000;
 }/*# sourceMappingURL=styles.css.map */
