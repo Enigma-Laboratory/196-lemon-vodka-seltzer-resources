@@ -1,0 +1,102 @@
+.section__chapter1-uk-1 {
+  position: relative;
+  display: flex;
+  height: 100vh;
+
+  .chapter-button {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .left-screen {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .wrap {
+      text-align: center;
+    }
+    h2 {
+      margin-top: 80px;
+      text-align: center;
+      color: $black-color;
+      font-size: 32px;
+      font-weight: 800;
+      line-height: 38.4px;
+      margin-bottom: 30px;
+    }
+    .divider {
+      display: inline-block;
+      width: 60px;
+      height: 8px;
+      background-color: $white-color;
+      margin-bottom: 40px;
+    }
+    h1 {
+      color: $black-color;
+      font-size: 72px;
+      font-weight: 700;
+      line-height: 72px;
+    }
+    .wrap-text {
+      text-align: center;
+      p {
+        display: inline-block;
+        width: 52%;
+        margin-top: 60px;
+        color: $black-color;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 26px;
+        text-align: center;
+      }
+    }
+  }
+  .right-screen {
+    flex: 1;
+    $height: 60%;
+    &__top {
+      height: $height;
+      display: flex;
+      &__left {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: end;
+        img {
+          height: 70%;
+        }
+      }
+      &__right {
+        display: flex;
+        flex-direction: column;
+        img {
+          $height2: 50%;
+          $gap: 3px;
+          display: inline-block;
+          object-fit: cover;
+          padding-left: $gap * 2;
+          height: calc(100% - $height2);
+          &:first-child {
+            height: $height2;
+            padding-bottom: $gap;
+          }
+          &:last-child {
+            padding-top: $gap;
+          }
+        }
+      }
+    }
+    &__bottom {
+      height: calc(100% - $height);
+      display: flex;
+      justify-content: flex-end;
+      padding-top: 6px;
+      img {
+        object-fit: cover;
+        height: 100%;
+      }
+    }
+  }
+}
