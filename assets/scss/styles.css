@@ -427,9 +427,9 @@ img {
 .chapter-button {
   font-size: 32px;
   font-weight: 800;
-  line-height: 46px;
+  line-height: 45px;
   text-align: center;
-  width: 260px;
+  width: 248px;
   background-color: #fedd00;
   color: #000;
   display: inline-block;
@@ -691,6 +691,27 @@ img {
     margin-top: 9rem;
   }
 }
+.white-box {
+  border: 3px solid #000;
+  position: absolute;
+  background-color: #fff;
+  padding: 32px 0;
+  text-align: center;
+  width: 550px;
+}
+.white-box h2 {
+  color: #000;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 45px;
+  margin-bottom: 35px;
+}
+.white-box p {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
 .section__header {
   padding: 40px 6% 60px;
   display: flex;
@@ -877,4 +898,73 @@ img {
   font-weight: 500;
   line-height: 26px;
   text-align: center;
+}
+
+.section__chapter1-us-2 {
+  position: relative;
+  display: inline-flex;
+  flex-direction: row;
+}
+.section__chapter1-us-2 .chapter-button {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.section__chapter1-us-2 .title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 140px;
+  text-align: center;
+}
+.section__chapter1-us-2 .title h2 {
+  color: #000;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 38.4px;
+}
+.section__chapter1-us-2 .title .divider {
+  margin-top: 25px;
+  display: inline-block;
+  height: 8px;
+  width: 73px;
+  background-color: #000;
+}
+.section__chapter1-us-2 .lines {
+  position: absolute;
+  left: 50%;
+  top: 433px;
+  transform: translateX(-50%);
+}
+.section__chapter1-us-2 .container1 {
+  flex-basis: 33.333333%;
+}
+.section__chapter1-us-2 .container1 img {
+  display: block;
+}
+.section__chapter1-us-2 .container1 .white-box {
+  left: 93px;
+  top: 586px;
+}
+.section__chapter1-us-2 .container2 {
+  flex-basis: 33.333333%;
+}
+.section__chapter1-us-2 .container2 img {
+  height: 100%;
+}
+.section__chapter1-us-2 .container2 .white-box {
+  left: 50%;
+  transform: translateX(-50%);
+  top: 276px;
+}
+.section__chapter1-us-2 .container3 {
+  flex-basis: 33.333333%;
+}
+.section__chapter1-us-2 .container3 img {
+  display: block;
+}
+.section__chapter1-us-2 .container3 .white-box {
+  right: 93px;
+  top: 586px;
 }/*# sourceMappingURL=styles.css.map */
