@@ -8,3 +8,9 @@
   color: $black-color;
   display: inline-block;
 }
+
+.secondary-chapter-button {
+  @extend .chapter-button;
+  background-color: $black-color;
+  color: $primary-color;
+}
