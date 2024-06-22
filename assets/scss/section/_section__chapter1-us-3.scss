@@ -1,21 +1,12 @@
+@import '../config/variables';
+
 .section__chapter1-us-3 {
+  text-align: center;
   position: relative;
-  // display: inline-flex;
-  flex-direction: row;
-  background-color: rgb(255, 174, 174);
   height: 100vh;
-  // margin-top: 20px;
-  .chapter-button {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+  background: url(/assets/img/chapter1/us-3/can.png) no-repeat center center / cover;
   .title {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 140px;
+    margin-top: 95px;
     text-align: center;
     h2 {
       color: $black-color;
@@ -30,5 +21,31 @@
       width: 73px;
       background-color: $black-color;
     }
+  }
+  .tag-button {
+    margin-top: 62px;
+    display: inline-block;
+    &.second-mode {
+      margin-top: 83px;
+    }
+  }
+  p {
+    display: inline-block;
+    width: 60%;
+    margin-top: 17px;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 80px;
+  }
+  .long-button {
+    margin-top: 86px;
+    font-size: 29.59px;
+    font-weight: 500;
+    line-height: 35.5px;
+    background-color: $white-color;
+    border: 1px solid $black-color;
+    display: inline-block;
+    padding: 8px 32px;
+    border-radius: 54px;
   }
 }
