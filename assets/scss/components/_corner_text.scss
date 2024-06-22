@@ -2,13 +2,14 @@
   font-size: 117.14px;
   font-style: italic;
   font-weight: 800;
-  line-height: 140.57px;
+  line-height: 73px;
   text-align: left;
   position: absolute;
-  top: 40px;
-  left: 40px;
-  .right {
+  top: 46px;
+  left: 84px;
+  color: $white-color;
+  &.right {
     left: unset;
-    right: 40px;
+    right: 84px;
   }
 }
