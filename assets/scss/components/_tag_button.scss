@@ -1,0 +1,15 @@
+@import '../config/variables';
+
+.tag-button {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 30px;
+  padding: 9px;
+  display: inline-block;
+  background-color: $primary-color;
+  width: 170px;
+  &.second-mode {
+    color: $primary-color;
+    background-color: $black-color;
+  }
+}

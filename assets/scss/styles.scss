@@ -3,7 +3,6 @@
 @import 'layout/layout';
 @import 'utils/utils';
 
-@import 'components/header';
 @import 'components/home';
 @import 'components/buttons';
 @import 'components/sponsor';
@@ -13,15 +12,26 @@
 @import 'components/products';
 @import 'components/footer';
 @import 'components/chapter_button';
-@import 'components/corner_text';
 @import 'components/scroll';
 @import 'components/mediaqueries';
+@import 'section/section__chapter3-us';
+@import 'components/corner_text';
 @import 'components/white_box';
+@import 'components/tag_button';
 
 @import 'section/section__header';
 @import 'section/section__chapter1-select';
+@import 'section/section__chapter1-uk-1';
+@import 'section/section__chapter1-uk-2';
+@import 'section/section__chapter1-uk-3';
+@import 'section/section__chapter1-uk-4';
 @import 'section/section__chapter1-us-1';
 @import 'section/section__chapter1-us-2';
 @import 'section/section__chapter1-us-3';
 @import 'section/section__chapter2';
+@import 'section/section__chapter3-aus';
+@import 'section/section__chapter1-us-4';
 @import 'section/section__chapter3';
+@import 'section/section__chapter3-de';
+@import 'section/section__chapter3-uk';
+@import 'section/section__footer';

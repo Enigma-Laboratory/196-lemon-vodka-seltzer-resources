@@ -1,6 +1,7 @@
 .section__chapter1-us-2 {
   position: relative;
   display: inline-flex;
+  width: 100%;
   flex-direction: row;
   $first-three: 33.333333%;
   .chapter-button {
@@ -37,8 +38,10 @@
   }
   .container1 {
     flex-basis: $first-three;
+    display: flex;
+    flex-direction: column;
     img {
-      display: block;
+      flex: 1;
     }
     .white-box {
       left: 93px;
@@ -57,9 +60,11 @@
     }
   }
   .container3 {
+    display: flex;
+    flex-direction: column;
     flex-basis: $first-three;
     img {
-      display: block;
+      flex: 1;
     }
     .white-box {
       right: 93px;
