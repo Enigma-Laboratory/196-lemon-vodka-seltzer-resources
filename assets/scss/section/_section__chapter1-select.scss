@@ -19,15 +19,15 @@
     width: 60%;
     margin-bottom: 80px;
   }
-  .wrap-img {
+  .wrap-image {
     display: flex;
     justify-content: space-between;
     height: 68vh;
-    .img {
+    .btn-img {
       display: inline-block;
       width: 45%;
       position: relative;
-      background-color: red;
+      cursor: pointer;
       img {
         width: 100%;
         height: 100%;
