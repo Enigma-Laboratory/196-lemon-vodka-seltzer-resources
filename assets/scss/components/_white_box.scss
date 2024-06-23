@@ -7,16 +7,24 @@
   padding: calc(32 / 1441 * 100vw) 20px;
   text-align: center;
   // width: 550px;
-  h2 {
+  > h2 {
     color: $black-color;
     font-size: calc(64 / 1441 * 100vw);
     font-weight: 700;
     line-height: calc(45 / 1441 * 100vw);
     margin-bottom: calc(35 / 1441 * 100vw);
+    span {
+      line-height: calc(45 / 1441 * 100vw);
+    }
   }
-  p {
+
+  > p {
     font-size: calc(28 / 1441 * 100vw);
     font-weight: 500;
     line-height: calc(22 / 1441 * 100vw);
+    span {
+      display: block;
+      line-height: calc(22 / 1441 * 100vw);
+    }
   }
 }
