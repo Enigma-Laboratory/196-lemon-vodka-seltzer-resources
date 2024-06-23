@@ -1,10 +1,11 @@
 @import '../config/variables';
+@import '../config/function';
 
 .section__chapter1-select {
   text-align: center;
   padding-bottom: 50px;
-  .chapter-button {
-    margin: 80px 0 40px;
+  .chapter-text {
+    margin: px-to-vw(80) 0 px-to-vw(40);
   }
   h1 {
     font-size: 72px;

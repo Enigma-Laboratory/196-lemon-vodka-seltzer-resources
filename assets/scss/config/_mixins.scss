@@ -1,12 +1,12 @@
 @import './variables';
 @import './function';
 
-@mixin chapter-button-styles($background-color, $text-color) {
-  font-size: 32px;
+@mixin chapter-text-styles($background-color, $text-color) {
+  font-size: px-to-vw(32);
   font-weight: 800;
-  line-height: 45px;
+  line-height: px-to-vw(45);
   text-align: center;
-  width: 248px;
+  width: px-to-vw(248);
   background-color: $background-color;
   color: $text-color;
   display: inline-block;
