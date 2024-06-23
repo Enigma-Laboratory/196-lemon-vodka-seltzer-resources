@@ -24,7 +24,6 @@
   .wrap-image {
     display: flex;
     justify-content: space-between;
-    // height: 68vh;
     .btn-img {
       display: inline-block;
       width: 45%;
@@ -41,14 +40,14 @@
         left: 0;
         top: 50%;
         transform: translateY(-50%);
-        background-color: $black-color;
         opacity: 50%;
-        .text {
-          font-size: 8vw;
-          font-style: italic;
-          font-weight: 800;
-          color: $white-color;
-        }
+        background-color: $black-color;
+        padding-bottom: 0.5vw;
+        font-size: 8vw;
+        font-style: italic;
+        font-weight: 800;
+        line-height: 7vw;
+        color: $white-color;
       }
     }
   }
