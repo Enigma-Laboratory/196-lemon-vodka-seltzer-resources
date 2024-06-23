@@ -1,15 +1,7 @@
+@import '../config/mixins';
 .corner-text {
-  font-size: 117.14px;
-  font-style: italic;
-  font-weight: 800;
-  line-height: 73px;
-  text-align: left;
-  position: absolute;
-  top: 46px;
-  left: 84px;
-  color: $white-color;
+  @include corner-text-styles(84);
   &.right {
-    left: unset;
-    right: 84px;
+    @include corner-text-styles(unset, 84);
   }
 }

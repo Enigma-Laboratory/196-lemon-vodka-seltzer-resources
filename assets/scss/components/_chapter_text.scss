@@ -1,0 +1,12 @@
+@import '../config/variables';
+@import '../config/mixins';
+
+.chapter-text {
+  @include chapter-text-styles($primary-color, $black-color);
+  &.white {
+    @include chapter-text-styles($white-color, $black-color);
+  }
+  &.black {
+    @include chapter-text-styles($black-color, $white-color);
+  }
+}

@@ -7,7 +7,7 @@ $card-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
   margin-bottom: 132px;
   display: flex;
   flex-direction: column;
-  .chapter-button {
+  .chapter-text {
     position: absolute;
     top: 0;
     left: 50%;
@@ -29,7 +29,6 @@ $card-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
       white-space: nowrap;
     }
   }
-  
 
   &__content {
     inset: 0;
@@ -196,7 +195,7 @@ $card-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
     }
     .section2-column-2__content__flights2 {
       .line {
-        animation: line-move-animation2 1s linear ;
+        animation: line-move-animation2 1s linear;
       }
 
       img {

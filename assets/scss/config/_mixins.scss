@@ -1,10 +1,26 @@
-@mixin chapter-button-styles($background-color, $text-color) {
-  font-size: 32px;
+@import './variables';
+@import './function';
+
+@mixin chapter-text-styles($background-color, $text-color) {
+  font-size: px-to-vw(32);
   font-weight: 800;
-  line-height: 45px;
+  line-height: px-to-vw(45);
   text-align: center;
-  width: 248px;
+  width: px-to-vw(248);
   background-color: $background-color;
   color: $text-color;
   display: inline-block;
+}
+
+@mixin corner-text-styles($left: unset, $right: unset) {
+  font-size: px-to-vw(117.14);
+  font-style: italic;
+  font-weight: 800;
+  line-height: px-to-vw(73);
+  text-align: left;
+  position: absolute;
+  color: $white-color;
+  top: px-to-vw(46);
+  left: px-to-vw($left);
+  right: px-to-vw($right);
 }
