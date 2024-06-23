@@ -1,0 +1,10 @@
+@mixin chapter-button-styles($background-color, $text-color) {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 45px;
+  text-align: center;
+  width: 248px;
+  background-color: $background-color;
+  color: $text-color;
+  display: inline-block;
+}

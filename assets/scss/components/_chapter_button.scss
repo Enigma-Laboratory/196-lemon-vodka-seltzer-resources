@@ -1,22 +1,12 @@
+@import '../config/variables';
+@import '../config/mixins';
+
 .chapter-button {
-  font-size: 32px;
-  font-weight: 800;
-  line-height: 45px;
-  text-align: center;
-  width: 248px;
-  background-color: $primary-color;
-  color: $black-color;
-  display: inline-block;
-}
-
-.secondary-chapter-button {
-  @extend .chapter-button;
-  background-color: $black-color;
-  color: $primary-color;
-}
-
-.white-chapter-button {
-  @extend .chapter-button;
-  background-color: $white-color;
-  color: $black-color;
+  @include chapter-button-styles($primary-color, $black-color);
+  &.white {
+    @include chapter-button-styles($white-color, $black-color);
+  }
+  &.black {
+    @include chapter-button-styles($black-color, $white-color);
+  }
 }
