@@ -4,19 +4,27 @@
   border: 3px solid $black-color;
   position: absolute;
   background-color: $white-color;
-  padding: 32px 20px;
+  padding: calc(32 / 1441 * 100vw) 20px;
   text-align: center;
-  width: 550px;
-  h2 {
+  // width: 550px;
+  > h2 {
     color: $black-color;
-    font-size: 64px;
+    font-size: calc(64 / 1441 * 100vw);
     font-weight: 700;
-    line-height: 45px;
-    margin-bottom: 35px;
+    line-height: calc(45 / 1441 * 100vw);
+    margin-bottom: calc(35 / 1441 * 100vw);
+    span {
+      line-height: calc(45 / 1441 * 100vw);
+    }
   }
-  p {
-    font-size: 28px;
+
+  > p {
+    font-size: calc(28 / 1441 * 100vw);
     font-weight: 500;
-    line-height: 22px;
+    line-height: calc(22 / 1441 * 100vw);
+    span {
+      display: block;
+      line-height: calc(22 / 1441 * 100vw);
+    }
   }
 }
