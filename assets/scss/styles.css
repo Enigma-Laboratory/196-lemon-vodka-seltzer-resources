@@ -93,6 +93,22 @@ img {
   align-items: center;
 }
 
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
 /*=============== HOME ===============*/
 .home__img {
   width: 250px;
@@ -355,7 +371,7 @@ img {
   color: var(--text-color-light);
 }
 
-.chapter-button, .secondary-chapter-button {
+.chapter-button {
   font-size: 32px;
   font-weight: 800;
   line-height: 45px;
@@ -365,10 +381,25 @@ img {
   color: #000;
   display: inline-block;
 }
-
-.secondary-chapter-button {
+.chapter-button.white {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 45px;
+  text-align: center;
+  width: 248px;
+  background-color: #fff;
+  color: #000;
+  display: inline-block;
+}
+.chapter-button.black {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 45px;
+  text-align: center;
+  width: 248px;
   background-color: #000;
-  color: #fedd00;
+  color: #fff;
+  display: inline-block;
 }
 
 /*=============== SCROLL UP ===============*/
@@ -835,7 +866,7 @@ img {
 .section__chapter1-select {
   text-align: center;
 }
-.section__chapter1-select .chapter-button, .section__chapter1-select .secondary-chapter-button {
+.section__chapter1-select .chapter-button {
   margin: 80px 0 40px;
 }
 .section__chapter1-select h1 {
@@ -892,7 +923,7 @@ img {
   display: flex;
   height: 100vh;
 }
-.section__chapter1-uk-1 .chapter-button, .section__chapter1-uk-1 .secondary-chapter-button {
+.section__chapter1-uk-1 .chapter-button {
   position: absolute;
   top: 0;
   left: 50%;
@@ -994,7 +1025,7 @@ img {
   width: 100%;
   flex-direction: row;
 }
-.section__chapter1-uk-2 .chapter-button, .section__chapter1-uk-2 .secondary-chapter-button {
+.section__chapter1-uk-2 .chapter-button {
   position: absolute;
   top: 0;
   left: 50%;
@@ -1110,7 +1141,7 @@ img {
   text-align: center;
   position: relative;
 }
-.section__chapter1-uk-4 .chapter-button, .section__chapter1-uk-4 .secondary-chapter-button {
+.section__chapter1-uk-4 .chapter-button {
   position: absolute;
   top: 0;
   left: 50%;
@@ -1195,7 +1226,7 @@ img {
   display: flex;
   height: 100vh;
 }
-.section__chapter1-us-1 .chapter-button, .section__chapter1-us-1 .secondary-chapter-button {
+.section__chapter1-us-1 .chapter-button {
   position: absolute;
   top: 0;
   left: 50%;
@@ -1285,7 +1316,7 @@ img {
   width: 100%;
   flex-direction: row;
 }
-.section__chapter1-us-2 .chapter-button, .section__chapter1-us-2 .secondary-chapter-button {
+.section__chapter1-us-2 .chapter-button {
   position: absolute;
   top: 0;
   left: 50%;
@@ -1401,6 +1432,144 @@ img {
   display: inline-block;
   padding: 8px 32px;
   border-radius: 54px;
+}
+
+.section__chapter2 {
+  position: relative;
+  margin-bottom: 132px;
+  display: flex;
+  flex-direction: column;
+}
+.section__chapter2 .chapter-button {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.section__chapter2__content {
+  inset: 0;
+  z-index: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1440px;
+  margin: auto;
+}
+.section__chapter2__content .section2-column-1 {
+  max-height: 100%;
+}
+.section__chapter2__content .section2-column-1 .video1 {
+  width: 100%;
+  height: 490px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section__chapter2__content .section2-column-1 .video2 {
+  width: 100%;
+  height: 490px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section__chapter2__content .section2-column-2 {
+  position: relative;
+}
+.section__chapter2__content .section2-column-2__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+}
+.section__chapter2__content .section2-column-2__content__aus {
+  position: absolute;
+  top: 100px;
+  right: -213px;
+  z-index: 1;
+}
+.section__chapter2__content .section2-column-2__content__de {
+  position: absolute;
+  bottom: -88px;
+  left: -153px;
+  z-index: 1;
+}
+.section__chapter2__content .section2-column-2__content__uk {
+  position: absolute;
+  top: -33px;
+  left: -153px;
+  z-index: 1;
+}
+.section__chapter2__content .section2-column-2__content__flights1 {
+  position: absolute;
+  top: 100px;
+  right: -100px;
+  width: 400px;
+  height: 120px;
+}
+.section__chapter2__content .section2-column-2__content__flights1 .relative {
+  width: 400px;
+  height: 120px;
+}
+.section__chapter2__content .section2-column-2__content__flights1 .line {
+  border-bottom: 5px dashed #fff;
+  transform: translate(15px, 65px) rotate(16deg);
+}
+.section__chapter2__content .section2-column-2__content__flights1 img {
+  position: absolute;
+  top: -35px;
+  left: -33px;
+}
+.section__chapter2__content .section2-column-2__content__flights2 {
+  position: absolute;
+  bottom: 40px;
+  right: -100px;
+  width: 400px;
+  height: 120px;
+}
+.section__chapter2__content .section2-column-2__content__flights2 .relative {
+  width: 400px;
+  height: 120px;
+}
+.section__chapter2__content .section2-column-2__content__flights2 .line {
+  border-bottom: 5px dashed #fff;
+  transform: translate(15px, 48px) rotate(-15deg);
+}
+.section__chapter2__content .section2-column-2__content__flights2 img {
+  position: absolute;
+  bottom: -26px;
+  left: -33px;
+  transform: rotate(-35deg);
+}
+.section__chapter2__content .section2-column-3 .video3 {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section__chapter2__background {
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+}
+.section__chapter2__background .rectangle {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  background-color: #000;
+}
+.section__chapter2__background .triangle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.section__chapter2__background .triangle-left {
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
+          clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  background-color: #fedd00; /* Color for the left triangle */
+}
+.section__chapter2__background .triangle-right {
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 0);
+          clip-path: polygon(100% 0, 100% 100%, 0 0);
+  background-color: #000; /* Color for the right triangle */
 }
 
 .section__chapter3_aus {
@@ -1533,7 +1702,7 @@ img {
   text-align: center;
   position: relative;
 }
-.section__chapter1-us-4 .chapter-button, .section__chapter1-us-4 .secondary-chapter-button {
+.section__chapter1-us-4 .chapter-button {
   position: absolute;
   top: 0;
   left: 50%;
