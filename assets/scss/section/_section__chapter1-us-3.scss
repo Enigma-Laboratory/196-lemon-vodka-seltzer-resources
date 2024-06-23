@@ -1,24 +1,24 @@
 @import '../config/variables';
+@import '../config/function';
 
 .section__chapter1-us-3 {
   text-align: center;
   position: relative;
-  height: 100vh;
   background: url(/assets/img/chapter1/us-3/can.png) no-repeat center center / cover;
   .title {
     margin-top: 95px;
     text-align: center;
     h2 {
       color: $black-color;
-      font-size: 32px;
+      font-size: px-to-vw(32);
       font-weight: 800;
-      line-height: 38.4px;
+      line-height: px-to-vw(38.4);
     }
     .divider {
-      margin-top: 25px;
+      margin-top: px-to-vw(25);
       display: inline-block;
       height: 8px;
-      width: 73px;
+      width: 73pxpx-to-vw(73);
       background-color: $black-color;
     }
   }
@@ -31,21 +31,20 @@
   }
   p {
     display: inline-block;
-    width: 60%;
     margin-top: 17px;
-    font-size: 72px;
+    font-size: px-to-vw(72);
     font-weight: 700;
-    line-height: 80px;
+    line-height: px-to-vw(80);
   }
   .long-button {
-    margin-top: 86px;
-    font-size: 29.59px;
-    font-weight: 500;
-    line-height: 35.5px;
+    margin: px-to-vw(86) 0 px-to-vw(144);
+    font-size: px-to-vw(29.59);
+    font-weight: px-to-vw(500);
+    line-height: px-to-vw(35.5);
     background-color: $white-color;
     border: 1px solid $black-color;
     display: inline-block;
-    padding: 8px 32px;
-    border-radius: 54px;
+    padding: px-to-vw(8) px-to-vw(32);
+    border-radius: px-to-vw(54);
   }
 }

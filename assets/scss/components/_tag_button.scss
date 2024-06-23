@@ -1,13 +1,14 @@
 @import '../config/variables';
+@import '../config/function';
 
 .tag-button {
-  font-size: 32px;
+  font-size: px-to-vw(32);
   font-weight: 500;
-  line-height: 30px;
-  padding: 9px;
+  line-height: px-to-vw(30);
+  padding: px-to-vw(9);
   display: inline-block;
   background-color: $primary-color;
-  width: 170px;
+  width: px-to-vw(170);
   &.second-mode {
     color: $primary-color;
     background-color: $black-color;
