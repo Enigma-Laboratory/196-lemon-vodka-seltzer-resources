@@ -20,6 +20,7 @@ $card-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
+
     .title {
       font-size: 93px;
       font-weight: 800;
@@ -27,6 +28,33 @@ $card-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
       text-align: center;
       margin-top: 110px;
       white-space: nowrap;
+    }
+
+    @media screen and (max-width: $xl) {
+      .title {
+        transform: scale(.7);
+        margin-top: 50px;
+      }
+    }
+
+    @media screen and (max-width: $md) {
+      .title {
+        transform: scale(.4);
+        margin-top: 40px;
+      }
+    }
+
+    @media screen and (max-width: $sm) {
+      .chapter-button.white {
+        font-size: 14px;
+        width: 145px;
+        line-height: 24px;
+      }
+
+      .title {
+        transform: scale(.3);
+        margin-top: 0px;
+      }
     }
   }
 
@@ -38,17 +66,33 @@ $card-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
     max-width: 1440px;
     margin: auto;
     .section2-column-1 {
+      display: flex;
+      flex-direction: column;
       max-height: 100%;
-      .video1 {
+
+      .video1,.video2 {
         width: 100%;
         height: 490px;
         object-fit: cover;
+        flex-grow: 1;
       }
 
-      .video2 {
-        width: 100%;
-        height: 490px;
-        object-fit: cover;
+      @media screen and (max-width: $xl) {
+        .video1,.video2 {
+          height: 300px;
+        }
+      }
+
+      @media screen and (max-width: $md) {
+        .video1,.video2 {
+          height: 200px;
+        }
+      }
+
+      @media screen and (max-width: $sm) {
+        .video1,.video2 {
+          height: 150px;
+        }
       }
     }
 
@@ -135,6 +179,30 @@ $card-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
           }
         }
       }
+
+      @media screen and (max-width: $xl) {
+        .section2-column-2__content {
+          > .relative {
+            transform: scale(0.7);
+          }
+        }
+      }
+
+      @media screen and (max-width: $md) {
+        .section2-column-2__content {
+          > .relative {
+            transform: scale(0.5);
+          }
+        }
+      }
+
+      @media screen and (max-width: $sm) {
+        .section2-column-2__content {
+          > .relative {
+            transform: scale(0.4);
+          }
+        }
+      }
     }
 
     .section2-column-3 {
@@ -146,12 +214,16 @@ $card-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
     }
 
     p {
+      position: absolute;
       font-size: 24px;
       font-weight: 500;
       line-height: 28px;
       text-align: center;
-      margin-top: 165px;
       padding: 0px 20px;
+      bottom: -65%;
+      @media screen and (max-width: $xl) {
+        bottom: -50%;
+      }
     }
   }
 
