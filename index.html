@@ -15,9 +15,16 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="stylesheet" href="assets/scss/styles.css" />
 
+    <!--===============AOS CSS ===============-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>196 Lemon | vodka</title>
   </head>
   <body>
+    <!--=============== INIT AOS ===============-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init()
+    </script>
     <main class="main">
       <!--=============== HEADER ===============-->
       <section class="section__header">
@@ -318,42 +325,74 @@
       </section>
       <!--=============== CHAPTER 2 ===============-->
       <section class="section__chapter2">
-        <div class="section__chapter2__header">
+        <div data-aos="fade-down" class="section__chapter2__header">
           <div class="chapter-text white">Charter 2</div>
           <h2 class="title">“Conveni” Activation</h2>
         </div>
         <div class="section__chapter2__content">
           <div class="section2-column-1">
-            <video class="video1" src="./assets/img/video1.mp4" autoplay muted></video>
-            <video class="video2" src="./assets/img/video2.mp4" autoplay muted></video>
+            <video
+              class="video1"
+              src="./assets/img/video1.mp4"
+              animation="opacity"
+              style="--data-delay: 2000ms"
+              autoplay
+              muted
+            ></video>
+            <video
+              class="video2"
+              src="./assets/img/video2.mp4"
+              animation="opacity"
+              style="--data-delay: 2000ms"
+              autoplay
+              muted
+            ></video>
           </div>
           <div class="section2-column-2">
             <div class="section2-column-2__content">
               <div class="relative">
-                <img src="./assets/img/chapter2/global.svg" alt="" />
-                <img class="section2-column-2__content__aus" src="./assets/img/chapter2/aus.svg" alt="" />
-                <img class="section2-column-2__content__de" src="./assets/img/chapter2/de.svg" alt="" />
-                <img class="section2-column-2__content__uk" src="./assets/img/chapter2/uk.svg" alt="" />
-                <div class="section2-column-2__content__flights1">
+                <img src="./assets/img/chapter2/global.svg" alt="" animation="opacity" />
+                <img
+                  class="section2-column-2__content__aus"
+                  animation="opacity"
+                  style="--data-delay: 1500ms"
+                  src="./assets/img/chapter2/aus.svg"
+                  alt=""
+                />
+                <img
+                  class="section2-column-2__content__de"
+                  animation="opacity"
+                  style="--data-delay: 2000ms"
+                  src="./assets/img/chapter2/de.svg"
+                  alt=""
+                />
+                <img
+                  class="section2-column-2__content__uk"
+                  animation="opacity"
+                  style="--data-delay: 2000ms"
+                  src="./assets/img/chapter2/uk.svg"
+                  alt=""
+                />
+                <div class="section2-column-2__content__flights1" animation="opacity" style="--data-delay: 1500ms">
                   <div class="relative">
                     <div class="line"></div>
                     <img src="./assets/img/chapter2/flights.svg" alt="" />
                   </div>
                 </div>
-                <div class="section2-column-2__content__flights2">
+                <div class="section2-column-2__content__flights2" animation="opacity" style="--data-delay: 1500ms">
                   <div class="relative">
                     <div class="line"></div>
                     <img src="./assets/img/chapter2/flights2.svg" alt="" />
                   </div>
                 </div>
-                <p>
+                <p animation="opacity">
                   Welcome to our website! Here you will find a wide array of resources and information tailored just for
                   you.
                 </p>
               </div>
             </div>
           </div>
-          <div class="section2-column-3">
+          <div class="section2-column-3" animation="opacity" style="--data-delay: 1000ms">
             <video class="video3" src="./assets/img/video3.mp4" autoplay muted></video>
           </div>
         </div>
@@ -374,7 +413,7 @@
         </div>
         <div class="map-wrapper">
           <div class="map">
-            <img src="./assets/img/map.svg" alt="" class="map__img"/>
+            <img src="./assets/img/map.svg" alt="" class="map__img" />
 
             <div class="card-1">
               <div class="card__content">
@@ -410,8 +449,7 @@
             <img src="./assets/img/chapter3/circle-de.svg" alt="" class="circle circle-de" />
             <img src="./assets/img/chapter3/circle-aus.svg" alt="" class="circle circle-aus" />
           </div>
-      </div>
-
+        </div>
       </section>
       <!--=============== CHAPTER 3-US ===============-->
       <section class="section__chapter3_us" id="section__chapter_3_us">
