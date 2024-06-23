@@ -3,28 +3,73 @@
 $card-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
 
 .section__chapter3 {
-  width: 100%;
-  height: 100%;
+  position: relative;
   background-color: $primary-color;
+  width: 100%;
+  height: calc(70vw + 6rem);
+  max-height: 1200px;
+
   &__header {
     text-align: center;
     padding-bottom: 88px;
 
     .chapter3__title {
-        padding-top: 40px;
-        font-size: 80px;
-        font-weight: 800;
-        line-height: 96px;
+      padding-top: clamp(0px, 2.5vw, 40px);;
+      font-size: clamp(24px,8vw,80px);
+      font-weight: 800;
+      line-height: clamp(28.8px,8vw,96px);
+    }
+  }
+  .map-wrapper {
+    // margin-top: 100px;
+    position: absolute;
+    inset: 0;
+    width: 1050px;
+    height: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: $xl) {
+      margin-top: 0px;;
     }
   }
 
   .map {
-    background-image: url('../img/map.svg');
-    max-width: 1050px;
-    height: 606.46px;
-    width: 100%;
+    // background-image: url('../img/map.svg');
+    width: 1050px;
+    height: 600px;
+    // width: 100%;
     margin: auto;
     position: relative;
+
+    &__img {
+      max-width: 100%;
+      object-fit: fill;
+    }
+
+    @media screen and (max-width: $xl) {
+      transform: scale(0.8);
+    }
+
+    @media screen and (max-width: $lg) {
+      transform: scale(0.6);
+    }
+
+    @media screen and (max-width: $md) {
+      transform: scale(0.5);
+    }
+
+    @media screen and (max-width: $sm) {
+      transform: scale(0.4);
+    }
+
+    @media screen and (max-width: $xs) {
+      transform: scale(0.3);
+    }
   }
 
   .card {
@@ -77,47 +122,46 @@ $card-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
 
   .card-1 {
     @extend .card;
-    top: -30px;
-    left: 207px;
+    top: -5%;
+    left: 19.7%;
   }
 
   .card-2 {
     @extend .card;
-    top: 81px;
-    left: 594px;
+    top: 13.5%;
+    left: 56.5%;
   }
 
   .card-3 {
     @extend .card;
-    top: 290px;
-    left: 44px;
+    top: 48.3%;
+    left: 4.2%;
   }
 
   .card-4 {
     @extend .card;
-    top: 258px;
-    right: -42px;
+    top: 43%;
+    right: -4%;
   }
 
   .circle {
     position: absolute;
 
     &-us {
-      top: 191px;
-      left: 172px;
+      top: 31.8%;
+      left: 16.38%;
     }
     &-uk {
-      top: 67px;
-      left: 378px;
+      top: 11.2%;
+      left: 36%;
     }
     &-de {
-      top: 170px;
-      right: 418px;
+      top: 28.3%;
+      right: 39.8%;
     }
     &-aus {
-      top: 360px;
-      right: 49px;
+      top: 60%;
+      right: 4.66%;
     }
   }
-  
 }
