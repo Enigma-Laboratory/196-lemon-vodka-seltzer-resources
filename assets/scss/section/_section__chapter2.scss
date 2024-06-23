@@ -17,6 +17,23 @@ $card-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
     transform: translateX(-50%);
   }
 
+  &__header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    .title {
+      font-size: 93px;
+      font-weight: 800;
+      line-height: 65px;
+      text-align: center;
+      margin-top: 110px;
+      white-space: nowrap;
+    }
+  }
+  
+
   &__content {
     // position: absolute;
     inset: 0;
@@ -70,7 +87,6 @@ $card-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
           z-index: 1;
         }
 
-        
         &__flights1 {
           position: absolute;
           top: 100px;
@@ -79,18 +95,21 @@ $card-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
           height: 120px;
 
           .relative {
-            width: 400px;
+            width: 200px;
             height: 120px;
           }
 
           .line {
             border-bottom: 5px dashed $white-color;
-            transform: translate(15px, 65px) rotate(16deg);
+            transform: translate(0px, 30px) rotate(19deg);
           }
+
           img {
             position: absolute;
-            top: -35px;
-            left: -33px;
+            // top: -35px;
+            // left: -33px;
+            top: -33.3%;
+            left: -20%;
           }
         }
 
@@ -102,20 +121,22 @@ $card-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
           height: 120px;
 
           .relative {
-            width: 400px;
+            width: 200px;
             height: 120px;
           }
 
           .line {
             border-bottom: 5px dashed $white-color;
-            transform: translate(15px, 48px) rotate(-15deg);
+            transform: translate(0px, 84px) rotate(-17deg);
           }
 
           img {
             position: absolute;
-            bottom: -26px;
-            left: -33px;
-            transform: rotate(-35deg);
+            // bottom: -26px;
+            // left: -33px;
+            top: 66.6%;
+            right: 80%;
+            // transform: rotate(-35deg);
           }
         }
       }
@@ -164,6 +185,27 @@ $card-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
     .triangle-right {
       clip-path: polygon(100% 0, 100% 100%, 0 0);
       background-color: $black-color; /* Color for the right triangle */
+    }
+  }
+
+  &.active {
+    .section2-column-2__content__flights1 {
+      .line {
+        animation: line-move-animation1 1s linear alternate;
+      }
+
+      img {
+        animation: diagonal-move-animation 1s linear alternate;
+      }
+    }
+    .section2-column-2__content__flights2 {
+      .line {
+        animation: line-move-animation2 1s linear ;
+      }
+
+      img {
+        animation: diagonal-move-animation2 1s linear;
+      }
     }
   }
 }
