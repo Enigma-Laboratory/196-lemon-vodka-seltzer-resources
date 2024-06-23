@@ -1,8 +1,8 @@
+@import '../config/function';
+
 .section__chapter1-uk-1 {
   position: relative;
   display: flex;
-  height: 100vh;
-
   .chapter-text {
     position: absolute;
     top: 0;
@@ -18,84 +18,74 @@
       text-align: center;
     }
     h2 {
-      margin-top: 80px;
+      margin-top: px-to-vw(80);
       text-align: center;
       color: $black-color;
-      font-size: 32px;
+      font-size: px-to-vw(32);
       font-weight: 800;
-      line-height: 38.4px;
-      margin-bottom: 30px;
+      line-height: 38.4px-to-vw(38.4);
+      margin-bottom: px-to-vw(30);
     }
     .divider {
       display: inline-block;
-      width: 60px;
-      height: 8px;
+      width: px-to-vw(60);
+      height: px-to-vw(8);
       background-color: $white-color;
-      margin-bottom: 40px;
+      margin-bottom: px-to-vw(41);
     }
     h1 {
       color: $black-color;
-      font-size: 72px;
+      font-size: px-to-vw(72);
       font-weight: 700;
-      line-height: 72px;
+      line-height: px-to-vw(72);
     }
     .wrap-text {
       text-align: center;
       p {
         display: inline-block;
         width: 52%;
-        margin-top: 60px;
+        margin-top: px-to-vw(60);
         color: $black-color;
-        font-size: 24px;
+        font-size: px-to-vw(24);
         font-weight: 500;
-        line-height: 26px;
+        line-height: px-to-vw(26);
         text-align: center;
       }
     }
   }
   .right-screen {
     flex: 1;
-    $height: 60%;
     &__top {
-      height: $height;
       display: flex;
       &__left {
         flex: 1;
         display: flex;
         justify-content: flex-end;
         align-items: end;
+        margin-right: 6px;
         img {
-          height: 70%;
+          width: px-to-vw(238);
         }
       }
       &__right {
         display: flex;
         flex-direction: column;
+        gap: 6px;
         img {
-          $height2: 50%;
-          $gap: 3px;
           display: inline-block;
           object-fit: cover;
-          padding-left: $gap * 2;
-          height: calc(100% - $height2);
-          &:first-child {
-            height: $height2;
-            padding-bottom: $gap;
-          }
-          &:last-child {
-            padding-top: $gap;
-          }
+          width: px-to-vw(293);
+          aspect-ratio: 293/299;
         }
       }
     }
     &__bottom {
-      height: calc(100% - $height);
       display: flex;
       justify-content: flex-end;
       padding-top: 6px;
       img {
-        object-fit: cover;
-        height: 100%;
+        width: px-to-vw(671);
+        aspect-ratio: 5/3;
       }
     }
   }
