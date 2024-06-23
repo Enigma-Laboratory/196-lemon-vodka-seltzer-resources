@@ -2,7 +2,7 @@
   position: relative;
   display: inline-flex;
   width: 100%;
-  flex-direction: row;
+  // flex-direction: row;
   $first-three: 33.333333%;
   .chapter-text {
     position: absolute;
@@ -45,7 +45,10 @@
     display: flex;
     flex-direction: column;
     img {
-      flex: 1;
+      flex-basis: 50%;
+      width: px-to-vw(480);
+      aspect-ratio: 480/510;
+      display: block;
     }
     .white-box {
       right: 55%;
@@ -55,6 +58,7 @@
   .container2 {
     flex-basis: $first-three;
     img {
+      width: 100%;
       height: 100%;
     }
     .white-box {
@@ -68,7 +72,10 @@
     flex-direction: column;
     flex-basis: $first-three;
     img {
-      flex: 1;
+      flex-basis: 50%;
+      width: px-to-vw(480);
+      aspect-ratio: 480/510;
+      display: block;
     }
     .white-box {
       left: 55%;

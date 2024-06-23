@@ -5,7 +5,7 @@
   position: relative;
   background: url(/assets/img/chapter1/us-3/can.png) no-repeat center center / cover;
   .title {
-    margin-top: 95px;
+    margin-top: px-to-vw(95);
     text-align: center;
     h2 {
       color: $black-color;
@@ -22,15 +22,15 @@
     }
   }
   .tag-text {
-    margin-top: 62px;
+    margin-top: px-to-vw(62);
     display: inline-block;
     &.second-mode {
-      margin-top: 83px;
+      margin-top: px-to-vw(83);
     }
   }
   p {
     display: inline-block;
-    margin-top: 17px;
+    margin-top: px-to-vw(17);
     font-size: px-to-vw(72);
     font-weight: 700;
     line-height: px-to-vw(80);

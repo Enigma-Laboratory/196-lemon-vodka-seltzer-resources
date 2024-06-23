@@ -2,13 +2,9 @@
 .section__footer {
   color: $white-color;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 30px;
-  padding: 29px;
-  .copy-right {
-  }
-  .contact {
-  }
+  font-size: px-to-vw(18);
+  line-height: px-to-vw(30);
+  padding: px-to-vw(29);
   text-align: center;
   display: flex;
   justify-content: center;
