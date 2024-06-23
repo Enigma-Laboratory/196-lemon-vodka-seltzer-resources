@@ -33,8 +33,12 @@
   .lines {
     position: absolute;
     left: 50%;
-    top: 433px;
+    top: 26%;
     transform: translateX(-50%);
+    width: 33vw;
+    img {
+      width: 100%;
+    }
   }
   .container1 {
     flex-basis: $first-three;
@@ -44,8 +48,8 @@
       flex: 1;
     }
     .white-box {
-      left: 93px;
-      top: 586px;
+      left: 14%;
+      top: 45%;
     }
   }
   .container2 {
@@ -56,7 +60,7 @@
     .white-box {
       left: 50%;
       transform: translateX(-50%);
-      top: 276px;
+      top: 25%;
     }
   }
   .container3 {
@@ -67,8 +71,8 @@
       flex: 1;
     }
     .white-box {
-      right: 93px;
-      top: 586px;
+      right: 14%;
+      top: 45%;
     }
   }
 }
