@@ -1,4 +1,5 @@
 @import '../config/variables';
+@import '../config/function';
 
 .section__chapter1-us-4 {
   text-align: center;
@@ -17,18 +18,21 @@
     position: absolute;
     inset: 0;
     &__top {
-      margin-top: 133px;
+      margin-top: px-to-vw(133);
       display: flex;
       width: 100%;
-
       &__left {
         flex-basis: 50%;
         text-align: right;
         .wrap-img {
           position: relative;
           display: inline-block;
-          width: 70%;
+          width: px-to-vw(449);
+          img:first-child {
+            width: 100%;
+          }
           .local-icon {
+            width: px-to-vw(132);
             display: inline-block;
             position: absolute;
             top: 50%;
@@ -40,31 +44,34 @@
       &__right {
         flex-basis: 50%;
         .title {
-          margin-top: 105px;
+          margin-top: px-to-vw(105);
           text-align: center;
           h2 {
             color: $black-color;
-            font-size: 32px;
+            font-size: px-to-vw(32);
             font-weight: 800;
-            line-height: 38.4px;
+            line-height: px-to-vw(38.4);
           }
           .divider {
-            margin-top: 25px;
+            margin-top: px-to-vw(25);
             display: inline-block;
             height: 8px;
-            width: 73px;
+            width: px-to-vw(73);
             background-color: $black-color;
           }
         }
         h1 {
-          margin-top: 27px;
-          font-size: 72px;
+          margin-top: px-to-vw(30);
+          font-size: px-to-vw(72);
           font-weight: 700;
-          line-height: 72px;
+          line-height: px-to-vw(72);
           color: $black-color;
+          > span {
+            display: block;
+          }
         }
         .arrow-wrap {
-          margin-top: 77px;
+          margin-top: px-to-vw(77);
           position: relative;
           img {
             width: 100%;
@@ -74,26 +81,27 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 52px;
+            font-size: px-to-vw(52);
             font-weight: 700;
-            line-height: 30px;
+            line-height: px-to-vw(30);
           }
         }
         .image-wrap {
           text-align: left;
-          margin-top: 88px;
+          margin-top: px-to-vw(88);
           > img {
-            margin-left: 60px;
+            margin-left: px-to-vw(60);
             display: inline-block;
             width: 80%;
+            width: px-to-vw(636);
           }
         }
       }
     }
     &__bottom {
-      margin-top: 108px;
+      margin: px-to-vw(76) 0 px-to-vw(70);
       img {
-        width: 50%;
+        width: px-to-vw(803);
       }
     }
   }

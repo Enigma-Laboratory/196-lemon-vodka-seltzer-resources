@@ -35,6 +35,9 @@
     font-size: px-to-vw(72);
     font-weight: 700;
     line-height: px-to-vw(80);
+    span {
+      display: block;
+    }
   }
   .long-button {
     margin: px-to-vw(86) 0 px-to-vw(144);
