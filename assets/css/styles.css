@@ -562,8 +562,7 @@ img {
 
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
-  /* width: 0.6rem; */
-  width: 0rem;
+  width: 0.6rem;
   border-radius: 0.5rem;
 }
 

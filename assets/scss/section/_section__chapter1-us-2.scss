@@ -14,19 +14,19 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 140px;
+    top: px-to-vw(140);
     text-align: center;
     h2 {
       color: $black-color;
-      font-size: 32px;
+      font-size: px-to-vw(32);
       font-weight: 800;
-      line-height: 38.4px;
+      line-height: px-to-vw(38.4);
     }
     .divider {
-      margin-top: 25px;
+      margin-top: px-to-vw(25);
       display: inline-block;
-      height: 8px;
-      width: 73px;
+      height: px-to-vw(8);
+      width: px-to-vw(73);
       background-color: $black-color;
     }
   }
@@ -48,7 +48,7 @@
       flex: 1;
     }
     .white-box {
-      left: 14%;
+      right: 55%;
       top: 45%;
     }
   }
@@ -71,7 +71,7 @@
       flex: 1;
     }
     .white-box {
-      right: 14%;
+      left: 55%;
       top: 45%;
     }
   }

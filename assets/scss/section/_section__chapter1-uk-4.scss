@@ -18,38 +18,41 @@
     position: absolute;
     inset: 0;
     display: flex;
-    margin-top: 133px;
+    margin-top: px-to-vw(133);
 
     &__left {
       flex: 1;
       text-align: right;
       .title {
-        margin-top: 105px;
+        margin-top: px-to-vw(105);
         text-align: center;
         h2 {
           color: $black-color;
-          font-size: 32px;
+          font-size: px-to-vw(32);
           font-weight: 800;
-          line-height: 38.4px;
+          line-height: px-to-vw(38.4);
         }
         .divider {
-          margin-top: 25px;
+          margin-top: px-to-vw(25);
           display: inline-block;
-          height: 8px;
-          width: 73px;
+          height: px-to-vw(8);
+          width: px-to-vw(73);
           background-color: $black-color;
         }
       }
       h1 {
-        margin-top: 27px;
-        font-size: 72px;
+        margin-top: px-to-vw(27);
+        font-size: px-to-vw(72);
         font-weight: 700;
-        line-height: 72px;
+        line-height: px-to-vw(72);
         color: $black-color;
         text-align: center;
+        > span {
+          display: block;
+        }
       }
       .arrow-wrap {
-        margin-top: 77px;
+        margin-top: px-to-vw(77);
         position: relative;
         img {
           width: 100%;
@@ -59,9 +62,9 @@
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
-          font-size: 52px;
+          font-size: px-to-vw(52);
           font-weight: 700;
-          line-height: 30px;
+          line-height: px-to-vw(30);
         }
       }
     }
@@ -71,13 +74,13 @@
       .wrap-img {
         position: relative;
         display: inline-block;
-        width: 60%;
         img:first-child {
-          width: 100%;
+          width: px-to-vw(441);
         }
         .local-icon {
           display: inline-block;
           position: absolute;
+          width: px-to-vw(133);
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);

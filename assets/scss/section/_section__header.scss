@@ -1,7 +1,7 @@
 @import '../config/variables';
 
 .section__header {
-  padding: 40px 6% 60px;
+  padding: px-to-vw(40) 6% px-to-vw(60);
   display: flex;
   justify-content: center;
   background-color: $primary-color;
@@ -13,17 +13,17 @@
     h1 {
       align-self: flex-start;
       color: $black-color;
-      font-size: 130px;
+      font-size: px-to-vw(130);
       font-weight: 800;
-      line-height: 108px;
+      line-height: px-to-vw(108);
     }
     > p {
       position: absolute;
       top: 35%;
       right: 0;
-      font-size: 24px;
+      font-size: px-to-vw(24);
       font-weight: 500;
-      line-height: 27px;
+      line-height: px-to-vw(27);
       color: $black-color;
       text-align: right;
       width: 87%;
@@ -31,15 +31,15 @@
     h2 {
       align-self: flex-end;
       color: $black-color;
-      font-size: 251.33px;
+      font-size: px-to-vw(251.33);
       font-weight: 600;
-      line-height: 334px;
-      height: 270px;
+      line-height: px-to-vw(334);
+      height: px-to-vw(270);
     }
   }
   img {
-    margin-left: 50px;
-    width: 204px;
-    height: 385px;
+    margin-left: px-to-vw(50);
+    width: px-to-vw(204);
+    height: px-to-vw(385);
   }
 }
