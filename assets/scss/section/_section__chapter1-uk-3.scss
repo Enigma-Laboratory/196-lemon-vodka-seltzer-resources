@@ -3,37 +3,37 @@
 .section__chapter1-uk-3 {
   text-align: center;
   position: relative;
-  height: 100vh;
   background: url(/assets/img/chapter1/uk-3/can.png) no-repeat center center / cover;
   .title {
-    margin-top: 95px;
+    margin-top: px-to-vw(95);
     text-align: center;
     h2 {
       color: $black-color;
-      font-size: 32px;
+      font-size: px-to-vw(32);
       font-weight: 800;
-      line-height: 38.4px;
+      line-height: px-to-vw(38.4);
     }
     .divider {
-      margin-top: 25px;
+      margin-top: px-to-vw(25);
       display: inline-block;
-      height: 8px;
-      width: 73px;
+      height: px-to-vw(8);
+      width: px-to-vw(73);
       background-color: $black-color;
     }
   }
   .tag-text {
-    margin-top: 62px;
+    margin-top: px-to-vw(62);
     display: inline-block;
     &.second-mode {
-      margin-top: 83px;
+      margin-top: px-to-vw(83);
     }
   }
   p {
     display: block;
-    margin-top: 17px;
-    font-size: 72px;
+    margin-top: px-to-vw(17);
+    font-size: px-to-vw(72);
     font-weight: 700;
-    line-height: 80px;
+    line-height: px-to-vw(80);
+    padding-bottom: px-to-vw(197);
   }
 }
