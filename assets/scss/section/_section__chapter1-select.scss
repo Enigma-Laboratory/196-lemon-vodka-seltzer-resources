@@ -1,24 +1,23 @@
 @import '../config/variables';
-@import '../config/function';
 
 .section__chapter1-select {
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: px-to-vw(50);
   .chapter-text {
     margin: px-to-vw(80) 0 px-to-vw(40);
   }
   h1 {
-    font-size: 72px;
+    font-size: px-to-vw(72);
     font-weight: 700;
     color: $black-color;
-    margin-bottom: 80px;
+    margin-bottom: px-to-vw(80);
   }
   p {
     display: inline-block;
-    font-size: 24px;
+    font-size: px-to-vw(24);
     font-weight: 500;
-    line-height: 26px;
-    margin-bottom: 80px;
+    line-height: px-to-vw(26);
+    margin-bottom: px-to-vw(80);
     span {
       display: block;
     }
