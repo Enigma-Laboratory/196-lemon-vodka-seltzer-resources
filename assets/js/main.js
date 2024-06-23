@@ -564,3 +564,30 @@ document.addEventListener('DOMContentLoaded', () => {
     slidesContainer.style.transform = `translateX(0)`
   }) // Reset position on resize
 })
+
+
+//NOTE: Check chapter 2 when entering the viewport, the effect will be activated
+document.addEventListener('DOMContentLoaded', function() {
+  const content = document.querySelector('.section__chapter2');
+
+  const observerOptions = {
+      root: null, // Use the viewport as the container
+      rootMargin: '0px', // No margin around the root
+      threshold: 0.5 // Trigger when 50% of the element is visible
+  };
+
+  const observerCallback = (entries, observer) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.classList.add('active');
+              // Optionally, you can unobserve the element if you want the animation to happen only once
+              // observer.unobserve(entry.target);
+          } else {
+              entry.target.classList.remove('active');
+          }
+      });
+  };
+
+  const observer = new IntersectionObserver(observerCallback, observerOptions);
+  observer.observe(content);
+});
