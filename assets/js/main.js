@@ -583,11 +583,38 @@ document.addEventListener('DOMContentLoaded', function() {
               // Optionally, you can unobserve the element if you want the animation to happen only once
               // observer.unobserve(entry.target);
           } else {
-              entry.target.classList.remove('active');
+              // entry.target.classList.remove('active');
           }
       });
   };
 
   const observer = new IntersectionObserver(observerCallback, observerOptions);
   observer.observe(content);
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  const contents = document.querySelectorAll('[animation="opacity"]')
+
+  const observerOptions = {
+      root: null, // Use the viewport as the container
+      rootMargin: '0px', // No margin around the root
+      threshold: 0.5 // Trigger when 50% of the element is visible
+  };
+
+  const observerCallback = (entries, observer) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.classList.add('active');
+              // Optionally, you can unobserve the element if you want the animation to happen only once
+              // observer.unobserve(entry.target);
+          } else {
+              // entry.target.classList.remove('active');
+          }
+      });
+  };
+
+  const observer = new IntersectionObserver(observerCallback, observerOptions);
+  contents.forEach(content => {
+    observer.observe(content);
+  });
 });
