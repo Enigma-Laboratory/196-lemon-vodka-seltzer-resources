@@ -20,26 +20,21 @@
     <title>196 Lemon | vodka</title>
   </head>
   <body>
-    <!--=============== INIT AOS ===============-->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init()
-    </script>
     <main class="main">
       <!--=============== HEADER ===============-->
       <section class="section__header" id="section__header">
         <div class="title">
-          <h1><i>Newsletter Vol.2</i></h1>
-          <p>
+          <h1 data-aos="fade-down"><i>Newsletter Vol.2</i></h1>
+          <p data-aos="fade-right">
             <span
               >Welcome to our website! Here you will find a wide array of resources and information tailored just</span
             >
             <span>for you. Whether you're seeking the latest updates, in-depth articles, or engaging multimedia</span>
             <span>content, we have something for everyone.</span>
           </p>
-          <h2>Awareness</h2>
+          <h2 data-aos="fade-up">Awareness</h2>
         </div>
-        <img src="./assets/img/can.svg" alt="image error" />
+        <img data-aos="fade-left" src="./assets/img/can.svg" alt="image error" />
       </section>
 
       <!--=============== CHAPTER 1_SELECT ===============-->
@@ -54,12 +49,12 @@
           <span> content, we have something for everyone. </span>
         </p>
         <div class="wrap-image">
-          <div class="btn-img">
+          <div class="btn-img" data-aos="fade-right">
             <img src="./assets/img/chapter1/select/uk.png" alt="image error" />
             <div class="wrap-text">US</div>
           </div>
 
-          <div class="btn-img">
+          <div class="btn-img" data-aos="fade-left">
             <img src="./assets/img/chapter1/select/us.png" alt="image error" />
             <div class="wrap-text">UK</div>
           </div>
@@ -70,7 +65,7 @@
       <section class="section__chapter1-us-1" id="section__chapter1-us-1">
         <div class="chapter-text">Charter 1</div>
         <span class="corner-text right">US</span>
-        <div class="left-screen">
+        <div class="left-screen" data-aos="fade-right">
           <div class="left-screen__top">
             <img src="./assets/img/chapter1/us-1/3-people.png" alt="image error" />
           </div>
@@ -110,11 +105,11 @@
           <div class="divider"></div>
         </div>
 
-        <div class="lines">
+        <div class="lines" animation="opacity" style="--data-delay:3s">
           <img src="./assets/img/common/triangle.svg" alt="image error" />
         </div>
 
-        <div class="container1">
+        <div class="container1" animation="opacity" style="--data-delay:1s">
           <img src="./assets/img/chapter1/us-2/can.png" alt="image error" />
           <img src="./assets/img/chapter1/us-2/machine.png" alt="image error" />
           <div class="white-box">
@@ -123,7 +118,7 @@
           </div>
         </div>
 
-        <div class="container2">
+        <div class="container2" animation="opacity">
           <img src="./assets/img/chapter1/us-2/lemon.png" alt="image error" />
           <div class="white-box">
             <h2>Not Basic</h2>
@@ -131,7 +126,7 @@
           </div>
         </div>
 
-        <div class="container3">
+        <div class="container3" animation="opacity" style="--data-delay:2s">
           <img src="./assets/img/chapter1/us-2/woman.png" alt="image error" />
           <img src="./assets/img/chapter1/us-2/street.png" alt="image error" />
           <div class="white-box">
@@ -148,18 +143,18 @@
           <h2>Brand Purpose / Essence</h2>
           <div class="divider"></div>
         </div>
-        <div>
+        <div data-aos="fade-up">
           <div class="tag-text">PURPOSE</div>
         </div>
-        <p>
+        <p data-aos="fade-up">
           <span> To ignite audacious ingenuity </span>
           <span> in a monocultural world </span>
         </p>
-        <div>
+        <div data-aos="fade-up" data-aos-delay="500">
           <div class="tag-text second-mode">ESSENCE</div>
         </div>
-        <p>Audacious Ingenuity</p>
-        <div>
+        <p data-aos="fade-up" data-aos-delay="500">Audacious Ingenuity</p>
+        <div data-aos="fade-up" data-aos-delay="1000">
           <div class="long-button">Click here for more details creative development process</div>
         </div>
       </section>
@@ -170,13 +165,13 @@
         <img src="./assets/img/chapter1/us-4/196.png" alt="image error" />
         <div class="container1">
           <div class="container1__top">
-            <div class="container1__top__left">
+            <div class="container1__top__left" data-aos="fade-right" data-aos-delay="1000">
               <div class="wrap-img">
                 <img src="./assets/img/chapter1/us-4/poster.png" alt="image error" />
                 <img class="local-icon" src="./assets/img/common/play-icon.svg" alt="image error" />
               </div>
             </div>
-            <div class="container1__top__right">
+            <div class="container1__top__right" data-aos="fade-left">
               <div class="title">
                 <h2>Creative Platform</h2>
                 <div class="divider"></div>
@@ -189,12 +184,12 @@
                 <img src="./assets/img/chapter1/us-4/arrow.svg" alt="image error" />
                 <h3>Creative Asset</h3>
               </div>
-              <div class="image-wrap">
+              <div class="image-wrap" data-aos="fade-left" data-aos-delay="1500">
                 <img src="./assets/img/chapter1/us-4/manufacture.png" alt="image error" />
               </div>
             </div>
           </div>
-          <div class="container1__bottom">
+          <div class="container1__bottom" data-aos="fade-left" data-aos-delay="2000">
             <img src="./assets/img/chapter1/us-4/manufacture.png" alt="image error" />
           </div>
         </div>
@@ -206,7 +201,7 @@
         <div class="chapter-text">Charter 1</div>
         <span class="corner-text">UK</span>
         <div class="left-screen">
-          <div class="wrap">
+          <div class="wrap" data-aos="fade-up">
             <h2>Design Target</h2>
             <div class="divider"></div>
             <h1>23-27 YO Male &</h1>
@@ -216,7 +211,7 @@
             </div>
           </div>
         </div>
-        <div class="right-screen">
+        <div class="right-screen" data-aos="fade-left" data-aos-delay="1000">
           <div class="right-screen__top">
             <div class="right-screen__top__left">
               <img src="./assets/img/chapter1/uk-1/a-woman.png" alt="image error" />
@@ -242,11 +237,11 @@
           <div class="divider"></div>
         </div>
 
-        <div class="lines">
+        <div class="lines" animation="opacity" style="--data-delay:2.5s;">
           <img src="./assets/img/common/triangle.svg" alt="image error" />
         </div>
 
-        <div class="container1">
+        <div class="container1" animation="opacity" style="--data-delay:1s;">
           <img src="./assets/img/chapter1/uk-2/station.png" alt="image error" />
           <img src="./assets/img/chapter1/uk-2/relaxed.png" alt="image error" />
           <div class="white-box">
@@ -258,7 +253,7 @@
           </div>
         </div>
 
-        <div class="container2">
+        <div class="container2" animation="opacity">
           <img src="./assets/img/chapter1/uk-2/4-people.png" alt="image error" />
           <img src="./assets/img/chapter1/uk-2/elder.png" alt="image error" />
           <div class="white-box">
@@ -271,7 +266,7 @@
           </div>
         </div>
 
-        <div class="container3">
+        <div class="container3" animation="opacity" style="--data-delay:2s;">
           <img src="./assets/img/chapter1/uk-2/a-woman.png" alt="image error" />
           <img src="./assets/img/chapter1/uk-2/street.png" alt="image error" />
           <div class="white-box">
@@ -314,17 +309,17 @@
               <h2>Creative Platform</h2>
               <div class="divider"></div>
             </div>
-            <h1>
+            <h1 data-aos="fade-right">
               <span>There's method</span>
               <span>in the minus</span>
             </h1>
-            <div class="arrow-wrap">
+            <div class="arrow-wrap" data-aos="fade-right">
               <img src="./assets/img/chapter1/uk-4/arrow.svg" alt="image error" />
               <h3>Creative Asset</h3>
             </div>
           </div>
 
-          <div class="container1__right">
+          <div class="container1__right" data-aos="fade-left" data-aos-delay="500">
             <div class="wrap-img">
               <img src="./assets/img/chapter1/uk-4/poster.png" alt="image error" />
               <img class="local-icon" src="./assets/img/common/play-icon.svg" alt="image error" />
@@ -423,13 +418,13 @@
       <!--=============== BLANK ===============-->
       <section class="section__blank"></section>
       <!--=============== CHAPTER 3-SELECT ===============-->
-      <section class="section__chapter3" id="section__chapter_3">
+      <section class="section__chapter3" id="section__chapter_3" >
         <div class="section__chapter3__header">
           <div class="chapter-text black">Charter 3</div>
           <div class="chapter3__title">Launch Activities</div>
         </div>
         <div class="map-wrapper">
-          <div class="map">
+          <div class="map" data-aos="zoom-in">
             <img src="./assets/img/map.svg" alt="" class="map__img" />
 
             <div class="card-1">
@@ -635,7 +630,11 @@
 
     <!--=============== SCROLL REVEAL ===============-->
     <script src="https://unpkg.com/scrollreveal"></script>
-
+    <!--=============== INIT AOS ===============-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init()
+    </script>
     <!--=============== MAIN JS ===============-->
     <script src="./assets/js/main.js"></script>
   </body>
