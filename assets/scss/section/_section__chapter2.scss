@@ -22,40 +22,40 @@ $card-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
     z-index: 1;
 
     .title {
-      font-size: 93px;
+      font-size: 6.5vw;
       font-weight: 800;
-      line-height: 65px;
+      line-height: 4.5vw;
       text-align: center;
-      margin-top: 110px;
+      margin-top: 7.6vw;
       white-space: nowrap;
     }
 
-    @media screen and (max-width: $xl) {
-      .title {
-        transform: scale(0.7);
-        margin-top: 50px;
-      }
-    }
+    // @media screen and (max-width: $xl) {
+    //   .title {
+    //     transform: scale(0.7);
+    //     margin-top: 50px;
+    //   }
+    // }
 
-    @media screen and (max-width: $md) {
-      .title {
-        transform: scale(0.4);
-        margin-top: 40px;
-      }
-    }
+    // @media screen and (max-width: $md) {
+    //   .title {
+    //     transform: scale(0.4);
+    //     margin-top: 40px;
+    //   }
+    // }
 
-    @media screen and (max-width: $sm) {
-      .chapter-button.white {
-        font-size: 14px;
-        width: 145px;
-        line-height: 24px;
-      }
+    // @media screen and (max-width: $sm) {
+    //   .chapter-button.white {
+    //     font-size: 14px;
+    //     width: 145px;
+    //     line-height: 24px;
+    //   }
 
-      .title {
-        transform: scale(0.3);
-        margin-top: 0px;
-      }
-    }
+    //   .title {
+    //     transform: scale(0.3);
+    //     margin-top: 0px;
+    //   }
+    // }
   }
 
   &__content {
@@ -220,15 +220,19 @@ $card-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
 
     p {
       position: absolute;
-      font-size: 24px;
+      font-size: clamp(6px ,1.7vw, 24px);
       font-weight: 500;
-      line-height: 28px;
+      // line-height: max(2vw, 28px);
       text-align: center;
-      padding: 20px;
-      bottom: -70%;
-      @media screen and (max-width: $xl) {
-        bottom: -50%;
-      }
+      padding: min(1.4vw, 20px) min(40px, 3.5vw);
+      bottom: min(74px, 5.14vw);
+      // bottom: -70%;
+      // @media screen and (max-width: $xl) {
+      //   bottom: -50%;
+      // }
+      // @media screen and (max-width: $md) {
+      //   bottom: -30%;
+      // }
     }
   }
 
